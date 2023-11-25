@@ -12,3 +12,33 @@
 #eatItem {
     margin: 30px 0px 30px 0px;
 }
+
+.time-bolck {
+    color: #6c757d;
+}
+
+.food-block {
+    padding: 30px 60px;
+    background-color: #fefcf7;
+    border-color: #fff3bb #ffe468 #f6cb07 #eede92;
+    border-width: 3px;
+    border-style: dotted;
+    border-radius: 100px;
+}
+
+hr {
+    margin-top: 0px !important;
+    opacity: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .food-block {
+        min-width: 300px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .food-block {
+        width: 700px;
+    }
+}

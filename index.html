@@ -12,32 +12,36 @@
 <body>
 	<div class="container text-center" id="random">
 		<div>
-			<div class="row">
-				<div class="col-12">
-					<div class="time-bolck">
-						<h6 id="nowDate"></h6>
-						<h1 id="nowTime"></h1>
+			<div class="food-block">
+				<div class="row">
+					<div class="col-12">
+						<select name="meals" id="meals" onchange="get_eatItem()" class="btn btn-dark">
+							<option value="breakfast">早餐</option>
+							<option value="lunch">午餐</option>
+							<option value="dinner">晚餐</option>
+						</select>
+						<label for="meals">吃什麼？</label>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-12">
+						<h1 id="eatItem" class="link-warning"></h1>
+					</div>
+					<div class="col-12">
+						<button id="again" onclick="get_eatItem()" class="btn btn-outline-dark">隨機選餐</button>
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="col-12">
-					<select name="meals" id="meals" onchange="get_eatItem()" class="btn btn-secondary">
-						<option value="breakfast">早餐</option>
-						<option value="lunch">午餐</option>
-						<option value="dinner">晚餐</option>
-					</select>
-					<label for="meals">吃什麼？</label>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-12">
-					<h1 id="eatItem" class="link-warning"></h1>
-				</div>
-				<div class="col-12">
-					<button id="again" onclick="get_eatItem()" class="btn btn-outline-secondary">隨機選餐</button>
+					<div class="time-bolck">
+						<hr/>
+						<h6>現在時間：</h6>
+						<h1 id="nowTime"></h1>
+						<h6 id="nowDate"></h6>
+					</div>
 				</div>
 			</div>
 		</div>
