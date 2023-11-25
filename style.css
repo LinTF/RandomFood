@@ -1,0 +1,14 @@
+#random {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#meals {
+    margin-right: 10px;
+}
+
+#eatItem {
+    margin: 30px 0px 30px 0px;
+}
